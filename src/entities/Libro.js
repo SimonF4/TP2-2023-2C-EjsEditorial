@@ -23,3 +23,5 @@ class Libro{
 
     //export{ getCantPags};
 }
+
+module.exports = Libro
