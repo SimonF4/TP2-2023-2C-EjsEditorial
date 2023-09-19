@@ -21,3 +21,5 @@ class Pagina {
         this.#cantidadDeLineas = cantidadDeLineas;
     }
 }
+
+module.exports = Pagina
