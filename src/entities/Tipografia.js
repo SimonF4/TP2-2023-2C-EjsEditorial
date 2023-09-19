@@ -9,3 +9,5 @@ class Tipografia{
         this.espaciado = espaciado;
     }
 }
+
+module.exports = Tipografia
