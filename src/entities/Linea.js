@@ -16,3 +16,5 @@ class Linea {
         this.cantidadDeCaracteres = cantidadDeCaracteres;
     }
 }
+
+module.exports = Linea
