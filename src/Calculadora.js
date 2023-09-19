@@ -5,3 +5,5 @@
     let linea = new Linea(new Medida(), new Medida(), 7, new Medida());
     let pagina = new Pagina(7, new Medida(), new Medida(), new Medida(), new Medida());
     let libro = new Libro(150);
+
+    alert(libro.getCantPags());
