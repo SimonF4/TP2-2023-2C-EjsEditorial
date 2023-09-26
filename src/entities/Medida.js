@@ -5,8 +5,15 @@ class Medida{
     #unidadDeMedida // (pixels, milímetros) : string
     
     constructor(medida, unidadDeMedida){
-        this.#medida = medida;
         this.#unidadDeMedida = unidadDeMedida;
+    }
+
+    setMedida(medida){
+        if(typeof medida != Number){ //"Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc."
+            throw new Error('La medida debe ser un dato numerico');
+        }
+        
+        this.#medida = medida;
     }
 }
 
