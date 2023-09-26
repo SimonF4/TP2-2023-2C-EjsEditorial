@@ -8,10 +8,10 @@ class Linea {
     #interlineado //: Medida
 
     constructor(alto, ancho, cantidadDeCaracteres, interlineado){
-        this.alto = alto;
-        this.ancho = ancho;
-        setCantidadCaracteres(cantidadDeCaracteres);
-        this.#interlineado = interlineado;
+        this.setAlto(alto);
+        this.setAncho(ancho);
+        this.setCantidadCaracteres(cantidadDeCaracteres);
+        this.setInterlineado(interlineado);
     }
 
     setCantidadCaracteres(cantidadDeCaracteres){
@@ -20,7 +20,7 @@ class Linea {
             throw new Error('La cantidad de caracteres debe ser un dato numerico');
         }
 
-        this.cantidadDeCaracteres = cantidadDeCaracteres;
+        this.#cantidadDeCaracteres = cantidadDeCaracteres;
     }
     
     validarMedida(medida){
