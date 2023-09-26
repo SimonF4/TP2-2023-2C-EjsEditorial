@@ -30,19 +30,27 @@ class Pagina {
     }
 
     setMargenSuperior(margenSuperior){
-        
+        this.validarMargen(margenSuperior);
+
+        this.margenSuperior = margenSuperior;
     }
 
     setMargenInferior(margenInferior){
-        
+        this.validarMargen(margenInferior);
+
+        this.margenInferior = margenInferior;
     }
 
     setMargenDerecho(margenDerecho){
-        
+        this.validarMargen(margenDerecho);
+
+        this.margenDerecho = margenDerecho;
     }
 
     setMargenIzquierdo(margenIzquierdo){
-        
+        this.validarMargen(margenIzquierdo);
+
+        this.margenIzquierdo = margenIzquierdo;
     }
 }
 
