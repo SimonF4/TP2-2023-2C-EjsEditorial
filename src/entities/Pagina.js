@@ -1,3 +1,5 @@
+const Medida = require('./Medida')
+
 class Pagina {
     #cantidadDeLineas //: number
     #margenSuperior //: Medida
@@ -20,6 +22,14 @@ class Pagina {
 
         this.#cantidadDeLineas = cantidadDeLineas;
     }
+
+    setMargen(margen){
+        if(typeof margen != Medida){
+            throw new Error('El margen debe ser un tipo de dato Medida');
+        }
+    }
+
+
 }
 
 module.exports = Pagina
