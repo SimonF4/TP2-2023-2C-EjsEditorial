@@ -14,6 +14,10 @@ class Libro{
     }
 
     setCantPags(cantPags){
+        if(typeof cantPags != Number){
+            throw new Error('La cantidad de paginas debe ser un dato numerico');
+        }
+
         this.cantPags = cantPags;
     }
 
