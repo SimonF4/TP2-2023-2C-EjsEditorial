@@ -9,7 +9,7 @@ class Pagina {
 
     constructor(cantidadDeLineas, margenSuperior, margenInferior, margenDerecho, margenIzquierdo){
         this.setCantLineas(cantidadDeLineas);
-        this.margenSuperior = margenSuperior;
+        this.setMargenSuperior(margenSuperior);
         this.margenInferior = margenInferior;
         this.margenDerecho = margenDerecho;
         this.margenIzquierdo = margenIzquierdo;
@@ -23,7 +23,7 @@ class Pagina {
         this.#cantidadDeLineas = cantidadDeLineas;
     }
 
-    setMargen(margen){
+    validarMargen(margen){
         if(typeof margen != Medida){
             throw new Error('El margen debe ser un tipo de dato Medida');
         }
