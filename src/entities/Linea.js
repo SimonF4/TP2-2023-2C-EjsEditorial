@@ -1,3 +1,5 @@
+const Medida = require('./Medida')
+
 class Linea {
 
     #alto //: Medida
@@ -19,6 +21,30 @@ class Linea {
         }
 
         this.cantidadDeCaracteres = cantidadDeCaracteres;
+    }
+    
+    validarMedida(medida){
+        if(typeof medida != Medida){
+            throw new Error('El dato ingresado debe ser de tipo Medida');
+        }
+    }
+
+    setAlto(alto){
+        this.validarMedida(alto);
+
+        this.#alto = alto;
+    }
+
+    setAncho(ancho){
+        this.validarMedida(ancho);
+
+        this.#ancho = ancho;
+    }
+
+    setInterlineado(interlineado){
+        this.validarMedida(interlineado);
+
+        this.#interlineado = interlineado;
     }
 }
 
