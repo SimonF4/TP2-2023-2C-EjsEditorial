@@ -5,6 +5,7 @@ class Medida{
     #unidadDeMedida // (pixels, milímetros) : string
     
     constructor(medida, unidadDeMedida){
+        this.setMedida(medida);
         this.#unidadDeMedida = unidadDeMedida;
     }
 
