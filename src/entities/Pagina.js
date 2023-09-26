@@ -10,9 +10,9 @@ class Pagina {
     constructor(cantidadDeLineas, margenSuperior, margenInferior, margenDerecho, margenIzquierdo){
         this.setCantLineas(cantidadDeLineas);
         this.setMargenSuperior(margenSuperior);
-        this.margenInferior = margenInferior;
-        this.margenDerecho = margenDerecho;
-        this.margenIzquierdo = margenIzquierdo;
+        this.setMargenInferior(margenInferior);
+        this.setMargenDerecho(margenDerecho);
+        this.setMargenIzquierdo(margenIzquierdo);
     }
 
     setCantLineas(cantidadDeLineas){
@@ -29,7 +29,21 @@ class Pagina {
         }
     }
 
+    setMargenSuperior(margenSuperior){
+        
+    }
 
+    setMargenInferior(margenInferior){
+        
+    }
+
+    setMargenDerecho(margenDerecho){
+        
+    }
+
+    setMargenIzquierdo(margenIzquierdo){
+        
+    }
 }
 
 module.exports = Pagina
