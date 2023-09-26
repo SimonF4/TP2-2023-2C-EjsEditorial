@@ -13,6 +13,11 @@ class Linea {
     }
 
     setCantidadCaracteres(cantidadDeCaracteres){
+
+        if(typeof cantidadDeCaracteres != Number){
+            throw new Error('La cantidad de caracteres debe ser un dato numerico');
+        }
+
         this.cantidadDeCaracteres = cantidadDeCaracteres;
     }
 }
