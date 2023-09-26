@@ -9,7 +9,7 @@ class Linea {
         this.alto = alto;
         this.ancho = ancho;
         setCantidadCaracteres(cantidadDeCaracteres);
-        this.cantidadDeLineas = cantidadDeLineas;
+        this.#interlineado = interlineado;
     }
 
     setCantidadCaracteres(cantidadDeCaracteres){
